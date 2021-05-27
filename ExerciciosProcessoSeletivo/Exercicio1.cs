@@ -31,20 +31,17 @@ namespace ExerciciosProcessoSeletivo
             };
 
             //DICA USE A CLAUSULA WHERE(funcionario => funcionario)
-            funcionariosAtivos = funcionariosBancoDedados;
+            funcionariosAtivos = funcionariosBancoDedados.Where(p => p.excluido == false).ToList();
             
 
-            var encontrados = funcionariosAtivos.Where(p => p.excluido == false);
+            
 
-            foreach (var p in encontrados)
-            {
-                teste.Add(p);
-            }
+           
 
             
 
 
-            return teste;
+            return funcionariosAtivos;
 
             
 

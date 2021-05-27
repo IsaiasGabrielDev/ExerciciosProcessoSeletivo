@@ -18,11 +18,11 @@ namespace ExerciciosProcessoSeletivo
             var data = DateTime.Now;
 
 
-            var clausula = "O FUNCIONÁRIO {nome.ToUpper()} É CONTRATADO PELA EMPRESA YPSUM\nPARA PRESTAR SERVIÇOS DE PROGRAMADOR {data}";
+            var clausula = $"O FUNCIONÁRIO {nome.ToUpper()} É CONTRATADO PELA EMPRESA YPSUM\nPARA PRESTAR SERVIÇOS DE PROGRAMADOR {data}";
 
-            var clausula1 = clausula.Replace("{nome.ToUpper()}", nome.ToUpper()).Replace("{data}", data.ToString());
+            //var clausula1 = clausula.Replace("{nome.ToUpper()}", nome.ToUpper()).Replace("{data}", data.ToString());
 
-            return clausula1;
+            return clausula;
         }
 
 

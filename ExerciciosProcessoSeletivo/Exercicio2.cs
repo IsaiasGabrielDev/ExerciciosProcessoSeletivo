@@ -17,15 +17,9 @@ namespace ExerciciosProcessoSeletivo
         
         internal List<int> GetCodigosOrdenados(List<int> codigos)
         {
-            var codigos_1 = new List<int>();
-          
-            var cods = codigos.OrderBy(c => c);
-            
-            foreach (var c in cods)
-	        {
-                codigos_1.Add(c);
-	        }
-            return codigos_1;
+            codigos = codigos.OrderBy(c => c).ToList();
+
+            return codigos;
         }
        
 
